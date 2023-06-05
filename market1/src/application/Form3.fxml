@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="918.0" maxWidth="1232.0" minHeight="611.0" minWidth="842.0" prefHeight="614.0" prefWidth="924.0" style="-fx-background-color: #454545;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form3Controller">
+   <children>
+      <TabPane fx:id="tabUrunler" layoutX="422.0" layoutY="14.0" prefHeight="329.0" prefWidth="492.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="icecek" text="İçecekler">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="299.0" prefWidth="492.0">
+                     <children>
+                        <VBox layoutX="177.0" layoutY="62.0" prefHeight="299.0" prefWidth="492.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="beypazari" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="bplimon" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cappy" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="limonata" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="link" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="salgam" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink111" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink121" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="drink72" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink102" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink112" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink122" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="meyve" text="Meyve">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="492.0">
+                     <children>
+                        <VBox prefHeight="299.0" prefWidth="492.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="elma" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="muz" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="uzum" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="kiraz" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="cilek" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="kivi" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="kavun" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="karpuz" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="portakal" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1021" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1121" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1221" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="sebze" text="Sebze">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="492.0">
+                     <children>
+                        <VBox prefHeight="299.0" prefWidth="492.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="aubergine" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cucumber" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="garlic" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="leek" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="lemon" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="onion" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="redpepper" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="tomato" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="drink722" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1022" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1122" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1222" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="temizlk" text="Temizlik">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="492.0">
+                     <children>
+                        <VBox prefHeight="299.0" prefWidth="492.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="camSil" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="domestos" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="mguc" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="sguc" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="shampo" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="yummos" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1113" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1213" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="drink723" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1023" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1123" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1223" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="bakiyat" text="Bakliyat">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="492.0">
+                     <children>
+                        <VBox prefHeight="299.0" prefWidth="492.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="bean" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="bulgur" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="chickpeas" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="glentil" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#drink12_Click" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="lentil" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="manti" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pasta" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="rice" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="drink724" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #2c2a2a;" />
+                                    <ImageView fx:id="drink1024" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1124" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1224" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#drink12_Click" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="atistirmalik" text="Atıştırmalık">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="492.0">
+                     <children>
+                        <VBox prefHeight="299.0" prefWidth="492.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="cpsSade" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cpsYogurt" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="etiCt" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="peynirk" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="snikers" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="susamk" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="tpuzum" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="wanted" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="492.0">
+                                 <children>
+                                    <ImageView fx:id="drink725" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1025" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1125" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="drink1225" fitHeight="100.0" fitWidth="123.0" onMouseClicked="#image" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <HBox layoutX="1.0" layoutY="367.0" prefHeight="242.0" prefWidth="505.0">
+         <children>
+            <VBox prefHeight="206.0" prefWidth="286.0">
+               <children>
+                  <Pane prefHeight="98.0" prefWidth="301.0" style="-fx-background-color: #2c2a2a; -fx-border-color: #FFFFFF; -fx-border-width: 1px 1px 0px;">
+                     <children>
+                        <Text fx:id="tplm" fill="#ff1700" layoutX="20.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="TOPLAM : " />
+                        <Label fx:id="toplam" layoutX="158.0" layoutY="30.0" style="-fx-font-size: 20;" text="....." textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="159.0" prefWidth="285.0" style="-fx-border-color: #FFFFFF;">
+                     <children>
+                        <Pane prefHeight="110.0" prefWidth="252.0" style="-fx-background-color: #2c2a2a;">
+                           <children>
+                              <Text fill="#e1a00a" fontSmoothingType="LCD" layoutX="9.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Ödenen : " />
+                              <Label fx:id="odenen" layoutX="9.0" layoutY="63.0" style="-fx-font-size: 20;" text="...." textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="109.0" prefWidth="233.0" style="-fx-background-color: #2c2a2a; -fx-border-width: 0 px 0px 0px 2px;">
+                           <children>
+                              <Text fill="#e1a00a" fontSmoothingType="LCD" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Para Üstü :" />
+                              <Label fx:id="paraustu" layoutX="14.0" layoutY="64.0" style="-fx-font-size: 20;" text="...." textFill="WHITE" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="kart" ellipsisString="" mnemonicParsing="false" onAction="#kart" prefHeight="242.0" prefWidth="113.0" style="-fx-background-color: #2c2a2a; -fx-border-color: #FFFFFF;" text="K Kartı" textFill="#1ac614" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="sepet" layoutX="67.0" layoutY="14.0" prefHeight="305.0" prefWidth="294.0" style="-fx-background-color: #454545;">
+        <columns>
+          <TableColumn fx:id="adet" prefWidth="50.0" text="  Adet" />
+          <TableColumn fx:id="urun" text="Ürün" />
+            <TableColumn fx:id="fiyat" text="Fiyat" />
+            <TableColumn fx:id="total" text="Toplam" />
+        </columns>
+      </TableView>
+      <HBox layoutX="506.0" layoutY="367.0" prefHeight="242.0" prefWidth="408.0">
+         <children>
+            <VBox prefHeight="270.0" prefWidth="108.0">
+               <children>
+                  <Button fx:id="ikiyuzb" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="46.0" prefWidth="160.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="200" textFill="WHITE" />
+                  <Button fx:id="yuzb" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="100" textFill="WHITE" />
+                  <Button fx:id="ellib" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="38.0" prefWidth="67.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="50" textFill="WHITE" />
+                  <Button fx:id="yirmib" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="40.0" prefWidth="67.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="20" textFill="WHITE" />
+                  <Button fx:id="anb" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="10" textFill="WHITE" />
+                  <Button fx:id="besb" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#tamSayi" opacity="0.86" prefHeight="40.0" prefWidth="67.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="5" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox prefHeight="258.0" prefWidth="280.0">
+               <children>
+                  <TextField fx:id="ekran" prefHeight="10.0" prefWidth="239.0" />
+                  <GridPane prefHeight="214.0" prefWidth="239.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="113.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="107.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="bbes" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="75.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buc" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="61.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="3" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="biki" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="61.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="2" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bdort" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="54.0" prefWidth="79.0" style="-fx-border-color: #FFFFFF;" text="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="byedi" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="64.0" prefWidth="79.0" style="-fx-border-color: #FFFFFF;" text="7" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bvirgul" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#virgul" opacity="0.86" prefHeight="54.0" prefWidth="79.0" style="-fx-border-color: #FFFFFF;" text="," GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bsifir" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="64.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="balti" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="54.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bC" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#c" opacity="0.86" prefHeight="69.0" prefWidth="93.0" style="-fx-border-color: #FFFFFF;" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bdokuz" layoutX="151.0" layoutY="185.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="62.0" prefWidth="140.0" style="-fx-border-color: #FFFFFF;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bsekiz" layoutX="10.0" layoutY="127.0" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="70.0" prefWidth="80.0" style="-fx-border-color: #FFFFFF;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bbir" mnemonicParsing="false" onAction="#number" opacity="0.86" prefHeight="51.0" prefWidth="87.0" style="-fx-border-color: #FFFFFF;" text="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="242.0" prefWidth="143.0">
+               <children>
+                  <Button fx:id="adtBtn" mnemonicParsing="false" onAction="#adetBtn" opacity="0.8" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="Adet" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="silBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#silBtn" opacity="0.81" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="Sil" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="odnBtn" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" onAction="#odenenBtn" opacity="0.85" prefHeight="59.0" prefWidth="100.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="Ödenen" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="okBtn" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#okBtn" opacity="0.86" prefHeight="54.0" prefWidth="100.0" style="-fx-background-color: #2c2a2a; -fx-border-color: white; -fx-border-width: 0px 0px 1px 0px;" text="OK" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
